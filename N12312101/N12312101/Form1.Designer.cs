@@ -31,6 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnbmi = new System.Windows.Forms.Button();
+            this.btm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,11 +69,32 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "邱新雅";
             // 
+            // btnbmi
+            // 
+            this.btnbmi.Location = new System.Drawing.Point(177, 215);
+            this.btnbmi.Name = "btnbmi";
+            this.btnbmi.Size = new System.Drawing.Size(75, 23);
+            this.btnbmi.TabIndex = 3;
+            this.btnbmi.Text = "bmi";
+            this.btnbmi.UseVisualStyleBackColor = true;
+            // 
+            // btm
+            // 
+            this.btm.Location = new System.Drawing.Point(297, 308);
+            this.btm.Name = "btm";
+            this.btm.Size = new System.Drawing.Size(75, 23);
+            this.btm.TabIndex = 4;
+            this.btm.Text = "按鈕";
+            this.btm.UseVisualStyleBackColor = true;
+            this.btm.Click += new System.EventHandler(this.btm_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btm);
+            this.Controls.Add(this.btnbmi);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -87,6 +110,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnbmi;
+        private System.Windows.Forms.Button btm;
     }
 }
 

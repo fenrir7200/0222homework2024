@@ -21,5 +21,13 @@ namespace N12312101
         {
 
         }
+
+        private void btm_Click(object sender, EventArgs e)
+        {
+
+
+            btm.Text = "按過嘞";
+
+        }
     }
 }
