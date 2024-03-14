@@ -27,7 +27,8 @@ namespace N12312101
 
 
             btm.Text = "按過嘞";
-
+            Form from = new Formbutton();
+            from.Show();
         }
     }
 }
