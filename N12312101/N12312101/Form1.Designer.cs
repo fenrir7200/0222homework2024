@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnbmi = new System.Windows.Forms.Button();
             this.btm = new System.Windows.Forms.Button();
+            this.btnTextBox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +81,7 @@
             // 
             // btm
             // 
-            this.btm.Location = new System.Drawing.Point(297, 308);
+            this.btm.Location = new System.Drawing.Point(177, 308);
             this.btm.Name = "btm";
             this.btm.Size = new System.Drawing.Size(75, 23);
             this.btm.TabIndex = 4;
@@ -88,11 +89,22 @@
             this.btm.UseVisualStyleBackColor = true;
             this.btm.Click += new System.EventHandler(this.btm_Click);
             // 
+            // btnTextBox
+            // 
+            this.btnTextBox.Location = new System.Drawing.Point(363, 214);
+            this.btnTextBox.Name = "btnTextBox";
+            this.btnTextBox.Size = new System.Drawing.Size(75, 23);
+            this.btnTextBox.TabIndex = 5;
+            this.btnTextBox.Text = "輸入框";
+            this.btnTextBox.UseVisualStyleBackColor = true;
+            this.btnTextBox.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTextBox);
             this.Controls.Add(this.btm);
             this.Controls.Add(this.btnbmi);
             this.Controls.Add(this.label3);
@@ -112,6 +124,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnbmi;
         private System.Windows.Forms.Button btm;
+        private System.Windows.Forms.Button btnTextBox;
     }
 }
 

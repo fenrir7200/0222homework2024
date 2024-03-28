@@ -10,31 +10,27 @@ using System.Windows.Forms;
 
 namespace N12312101
 {
-    public partial class Form1 : Form
+    public partial class FormTextBox : Form
     {
-        public Form1()
+        public FormTextBox()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            MessageBox.Show("text box 被改變了");
 
         }
 
-        private void btm_Click(object sender, EventArgs e)
+        private void tplnput_TextChanged(object sender, EventArgs e)
         {
 
-
-            btm.Text = "按過嘞";
-            Form from = new Formbutton();
-            from.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form formTextBox = new FormTextBox();
-            formTextBox.Show();
+            label1.Text = tplnput.Text;
         }
     }
 }
