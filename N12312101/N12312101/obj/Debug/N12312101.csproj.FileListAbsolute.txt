@@ -10,3 +10,5 @@ C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.
 C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.pdb
 C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.Formbutton.resources
 C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.FormTextBox.resources
+C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.Form2.resources
+C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.Formc.resources

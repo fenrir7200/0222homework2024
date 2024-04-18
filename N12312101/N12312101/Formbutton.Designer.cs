@@ -93,6 +93,7 @@
             this.labcount1.Size = new System.Drawing.Size(23, 12);
             this.labcount1.TabIndex = 6;
             this.labcount1.Text = "100";
+            this.labcount1.Click += new System.EventHandler(this.labcount1_Click);
             // 
             // btncount1
             // 

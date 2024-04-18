@@ -34,6 +34,7 @@
             this.btnbmi = new System.Windows.Forms.Button();
             this.btm = new System.Windows.Forms.Button();
             this.btnTextBox = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,6 +79,7 @@
             this.btnbmi.TabIndex = 3;
             this.btnbmi.Text = "bmi";
             this.btnbmi.UseVisualStyleBackColor = true;
+            this.btnbmi.Click += new System.EventHandler(this.btnbmi_Click);
             // 
             // btm
             // 
@@ -99,11 +101,22 @@
             this.btnTextBox.UseVisualStyleBackColor = true;
             this.btnTextBox.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(386, 280);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 78);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "期中考-攝氏轉華氏";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTextBox);
             this.Controls.Add(this.btm);
             this.Controls.Add(this.btnbmi);
@@ -125,6 +138,7 @@
         private System.Windows.Forms.Button btnbmi;
         private System.Windows.Forms.Button btm;
         private System.Windows.Forms.Button btnTextBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 

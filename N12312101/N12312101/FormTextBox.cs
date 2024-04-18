@@ -55,10 +55,7 @@ namespace N12312101
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int a=Int32.Parse(textBox2.Text);
-            int b=Int32.Parse(textBox3.Text);
-            int sum = a + b;
-            label4.Text = sum.ToString();
+           
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -67,6 +64,11 @@ namespace N12312101
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

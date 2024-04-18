@@ -4,15 +4,16 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace N12312101
 {
-    public partial class Form1 : Form
+    public partial class Formc : Form
     {
-        public Form1()
+        public Formc()
         {
             InitializeComponent();
         }
@@ -22,30 +23,21 @@ namespace N12312101
 
         }
 
-        private void btm_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
-
-            btm.Text = "按過嘞";
-            Form from = new Formbutton();
-            from.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form formTextBox = new FormTextBox();
-            formTextBox.Show();
+            string tmp = label3.Text;
+            int sum = Int32.Parse(tmp)+1;
+            label3.Text = sum.ToString();
         }
 
-        private void btnbmi_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Form formc = new Formc();
-            formc.Show();
         }
     }
 }

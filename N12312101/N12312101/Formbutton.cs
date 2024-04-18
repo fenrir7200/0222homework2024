@@ -45,5 +45,10 @@ namespace N12312101
             int sum = Int32.Parse(tmp)-1;
             labcount1.Text = sum.ToString();
         }
+
+        private void labcount1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
