@@ -47,5 +47,11 @@ namespace N12312101
             Form formc = new Formc();
             formc.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form formTryCatch = new FormTryCatch();
+            formTryCatch.Show();
+        }
     }
 }
