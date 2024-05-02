@@ -53,5 +53,11 @@ namespace N12312101
             Form formTryCatch = new FormTryCatch();
             formTryCatch.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form formTimer = new FormTimer();
+            formTimer.Show();
+        }
     }
 }

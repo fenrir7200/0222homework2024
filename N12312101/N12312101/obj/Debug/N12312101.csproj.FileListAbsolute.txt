@@ -13,3 +13,4 @@ C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.
 C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.Form2.resources
 C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.Formc.resources
 C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.FormTryCatch.resources
+C:\Users\MEGAS\Desktop\0222homework2024\N12312101\N12312101\obj\Debug\N12312101.FormTimer.resources
