@@ -37,6 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnGameFinalPaws = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +106,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(363, 308);
+            this.button1.Location = new System.Drawing.Point(329, 271);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 78);
             this.button1.TabIndex = 6;
@@ -115,7 +116,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(586, 214);
+            this.button2.Location = new System.Drawing.Point(575, 132);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 57);
             this.button2.TabIndex = 7;
@@ -125,7 +126,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(586, 147);
+            this.button3.Location = new System.Drawing.Point(575, 70);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 46);
             this.button3.TabIndex = 8;
@@ -133,11 +134,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btnGameFinalPaws
+            // 
+            this.btnGameFinalPaws.Location = new System.Drawing.Point(575, 283);
+            this.btnGameFinalPaws.Name = "btnGameFinalPaws";
+            this.btnGameFinalPaws.Size = new System.Drawing.Size(136, 48);
+            this.btnGameFinalPaws.TabIndex = 9;
+            this.btnGameFinalPaws.Text = "終極密碼";
+            this.btnGameFinalPaws.UseVisualStyleBackColor = true;
+            this.btnGameFinalPaws.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGameFinalPaws);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -165,6 +177,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnGameFinalPaws;
     }
 }
 

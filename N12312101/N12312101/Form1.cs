@@ -59,5 +59,11 @@ namespace N12312101
             Form formTimer = new FormTimer();
             formTimer.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form formGameFinalPaws = new FormGameFinalPaws();
+            formGameFinalPaws.Show();
+        }
     }
 }

@@ -28,5 +28,15 @@ namespace N12312101
             label1.Text= String.Format("{0}秒", this.second);
             this.second++;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+        }
     }
 }
