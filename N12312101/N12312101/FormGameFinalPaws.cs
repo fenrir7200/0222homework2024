@@ -46,7 +46,7 @@ namespace N12312101
                 {
                     this.max = input;
                 }
-                label2.Text = string.Format("請輸入0到1之間的數字", min, max);
+                label2.Text = string.Format("請輸入{0}到{1}之間的數字", min, max);
             }catch(Exception el) {
                 MessageBox.Show("輸入錯誤，請輸入數字");
 
@@ -56,10 +56,10 @@ namespace N12312101
         private void button1_Click(object sender, EventArgs e)
         {
             Random r = new Random();
-            int result = r.Next(100);
-            MessageBox.Show(result.ToString());
-            label1.Text = "已隨機產生0-100的數字，請在下方作答";
-            label2.Text = string.Format("請輸入0-1之間的數值", min, max);
+            this.answer = r.Next(100);
+            MessageBox.Show(this.answer.ToString());
+            label1.Text = "已隨機產生0~100的數字，請在下方作答";
+            label2.Text = string.Format("請輸入0~100之間的數值", min, max);
 
 
         }
