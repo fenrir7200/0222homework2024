@@ -65,5 +65,11 @@ namespace N12312101
             Form formGameFinalPaws = new FormGameFinalPaws();
             formGameFinalPaws.Show();
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Form chatForm3 = new chatForm3();
+            chatForm3.Show();
+        }
     }
 }
