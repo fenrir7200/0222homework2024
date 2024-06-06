@@ -44,17 +44,32 @@ namespace N12312101
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach(Control c in panel1.Controls)
+            String main = "", drinking = "", sidedishes = "";
+
+            foreach (Control c in panel1.Controls)
             {
-                if(c is CheckBox)
+                if (c is CheckBox)
                 {
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        MessageBox.Show(chk.Text);
+                        main += chk.Text+"，";
                     }
                 }
             }
+
+            foreach (Control c in panel2.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox chk = (CheckBox)c;
+                    if (chk.Checked)
+                    {
+                        drinking += chk.Text+"，";
+                    }
+                }
+            }
+
 
         }
     }
