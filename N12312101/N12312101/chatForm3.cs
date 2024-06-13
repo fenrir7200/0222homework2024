@@ -6,7 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms
+using Sys
 
 namespace N12312101
 {
@@ -15,6 +16,13 @@ namespace N12312101
         public chatForm3()
         {
             InitializeComponent();
+
+            if (!File.Exists("OrderDate.csv"))
+            File.WritellText("OrderDate.csv", "Time,staples,side,beverages\n"
+
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -65,12 +73,13 @@ namespace N12312101
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        drinking += chk.Text+"，";
-                    }
+                        main +=chk.Text+" "; // main =      }
                 }
             }
-
-
+            main=main.Remove(main.Length-1, 1);
+            drinking=drinking.Remove(drinking.Length-1, 1);
+            sidedishes=sidedishes.Remove(sidedishes.Length-1, 1);
+            MessageBox.Show("主食區:"+main+" 
         }
     }
 }
