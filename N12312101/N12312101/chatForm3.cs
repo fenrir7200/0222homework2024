@@ -6,8 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms
-using Sys
+using System.Windows.Forms;
+using System.IO;
 
 namespace N12312101
 {
@@ -17,9 +17,8 @@ namespace N12312101
         {
             InitializeComponent();
 
-            if (!File.Exists("OrderDate.csv"))
-            File.WritellText("OrderDate.csv", "Time,staples,side,beverages\n"
-
+            if (!File.Exists("OrderData.csv"))
+            File.WriteAllText("OrderData.csv", "Time,staples,side\n",Encoding.UTF8);
 
 
 
@@ -52,7 +51,7 @@ namespace N12312101
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String main = "", drinking = "", sidedishes = "";
+            String main = "", drinking = "";
 
             foreach (Control c in panel1.Controls)
             {
@@ -61,7 +60,7 @@ namespace N12312101
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        main += chk.Text+"，";
+                        main += chk.Text+" ";
                     }
                 }
             }
@@ -73,13 +72,17 @@ namespace N12312101
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        main +=chk.Text+" "; // main =      }
+                        drinking+=chk.Text+" ";
+                    }
                 }
             }
-            main=main.Remove(main.Length-1, 1);
-            drinking=drinking.Remove(drinking.Length-1, 1);
-            sidedishes=sidedishes.Remove(sidedishes.Length-1, 1);
-            MessageBox.Show("主食區:"+main+" 
-        }
+                main = main.Remove(main.Length - 1, 1);
+                drinking = drinking.Remove(drinking.Length - 1, 1);
+                DateTime currentDateTime = DateTime.Now;
+                string orderTime = currentDateTime.ToString("yyyy/MM/dd HH:mm:ss");
+
+                File.AppendAllText("OrderData.csv", orderTime + "," + main + "," + drinking + "\n");
+                MessageBox.Show("Host:" + main + "\nDrinks:" + drinking);
+            }
     }
 }
